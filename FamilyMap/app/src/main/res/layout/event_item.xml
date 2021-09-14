@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/eventListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Title" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/eventListTitle">
+
+        <TextView
+            android:id="@+id/eventCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="City" />
+
+        <TextView
+            android:id="@+id/eventCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Country" />
+    </LinearLayout>
+
+</RelativeLayout>

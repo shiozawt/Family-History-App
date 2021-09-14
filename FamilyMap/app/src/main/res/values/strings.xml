@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Family Map</string>
+    <string name="login_title_hint"></string>
+    <string name="gender_switch_text">Gender:</string>
+    <string name="login_toast">Log in</string>
+    <string name="eventListTitle">LIFE EVENTS:</string>
+    <string name="personListTitle">FAMILY:</string>
+    <string name="mapFragmentMessage">Click on a marker to see event details</string>
+    <string name="eventListToastText">You selected %s.</string>
+    <string name="personListToastText">You selected %s.</string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mapTextView"
+        android:layout_marginBottom="0dp" />
+
+    <TextView
+        android:id="@+id/mapTextView"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="14dp"
+        android:gravity="center_horizontal"
+        android:text="@string/mapFragmentMessage"
+        android:textAlignment="center"
+        android:textColor="#151414"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/green_map"
+        android:layout_width="43dp"
+        android:layout_height="76dp"
+        android:layout_alignBottom="@id/mapTextView"
+        android:layout_marginBottom="-2dp"
+        android:background="#FFFFFF"
+        android:clickable="false"
+        android:src="@drawable/map"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/female_icon"
+        android:layout_width="43dp"
+        android:layout_height="76dp"
+        android:layout_alignBottom="@id/mapTextView"
+        android:layout_marginBottom="-2dp"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+        android:clickable="false"
+        android:src="@drawable/female"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/male_icon"
+        android:layout_width="43dp"
+        android:layout_height="76dp"
+        android:layout_alignBottom="@id/mapTextView"
+        android:layout_marginBottom="-2dp"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+        android:clickable="false"
+        android:src="@drawable/male"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/search_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/map"
+        android:layout_marginRight="50dp"
+        android:src="@drawable/ic_action_name"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/settings_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/map"
+        android:src="@drawable/settings"></ImageButton>
+
+</RelativeLayout>
